@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARENA — Unleash the Game | Elite Sports Experience</title>
+  <meta name="description" content="ARENA — Your gateway to elite sports action. Get tickets, watch live, and stay on top of every game.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⚡</span>ARENA
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#matches">Matches</a></li>
+        <li><a href="#scores">Live Scores</a></li>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#achievements">Trophies</a></li>
+        <li><a href="#" class="nav-btn">Get Tickets</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">SEASON 2026 — NOW LIVE</p>
+      <h1 class="hero-title">
+        UNLEASH<br>
+        <span class="hero-highlight">THE GAME</span>
+      </h1>
+      <p class="hero-sub">Where legends are forged. Where records are shattered.<br>Every match is a battle — are you ready?</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary" id="btnTickets">GET TICKETS</a>
+        <a href="#" class="btn btn-outline" id="btnLive">
+          <span class="btn-live-dot"></span>WATCH LIVE
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="128">0</span>
+          <span class="hero-stat-label">Matches This Season</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="24">0</span>
+          <span class="hero-stat-label">Teams Competing</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-target="2400000">0</span>
+          <span class="hero-stat-label">Fans Worldwide</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== DIAGONAL DIVIDER ===== -->
+  <div class="divider divider-down"></div>
+
+  <!-- ===== UPCOMING MATCHES ===== -->
+  <section class="section matches" id="matches">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">UPCOMING</span>
+        <h2 class="section-title">NEXT <span class="text-red">BATTLES</span></h2>
+        <p class="section-sub">Don't miss the action — every second counts.</p>
+      </div>
+      <div class="matches-grid">
+        <!-- Match 1 -->
+        <div class="match-card reveal" data-match-date="2026-02-25T20:00:00">
+          <div class="match-league">PREMIER LEAGUE — MATCHDAY 24</div>
+          <div class="match-teams">
+            <div class="match-team">
+              <div class="team-logo">🔴</div>
+              <span class="team-name">THUNDER FC</span>
+            </div>
+            <div class="match-vs">
+              <span>VS</span>
+              <div class="match-time">20:00</div>
+            </div>
+            <div class="match-team">
+              <div class="team-logo">🔵</div>
+              <span class="team-name">STORM UTD</span>
+            </div>
+          </div>
+          <div class="match-countdown">
+            <div class="cd-item"><span class="cd-num" data-cd="days">00</span><span class="cd-label">DAYS</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="hours">00</span><span class="cd-label">HRS</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="minutes">00</span><span class="cd-label">MIN</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="seconds">00</span><span class="cd-label">SEC</span></div>
+          </div>
+          <div class="match-venue">📍 National Stadium, Arena City</div>
+          <a href="#" class="match-cta">BUY TICKETS →</a>
+        </div>
+
+        <!-- Match 2 -->
+        <div class="match-card reveal" data-match-date="2026-03-02T18:30:00">
+          <div class="match-league">CHAMPIONS CUP — QUARTER FINAL</div>
+          <div class="match-teams">
+            <div class="match-team">
+              <div class="team-logo">⚫</div>
+              <span class="team-name">IRON WOLVES</span>
+            </div>
+            <div class="match-vs">
+              <span>VS</span>
+              <div class="match-time">18:30</div>
+            </div>
+            <div class="match-team">
+              <div class="team-logo">🟡</div>
+              <span class="team-name">GOLDEN HAWKS</span>
+            </div>
+          </div>
+          <div class="match-countdown">
+            <div class="cd-item"><span class="cd-num" data-cd="days">00</span><span class="cd-label">DAYS</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="hours">00</span><span class="cd-label">HRS</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="minutes">00</span><span class="cd-label">MIN</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="seconds">00</span><span class="cd-label">SEC</span></div>
+          </div>
+          <div class="match-venue">📍 Victory Arena, Metro</div>
+          <a href="#" class="match-cta">BUY TICKETS →</a>
+        </div>
+
+        <!-- Match 3 -->
+        <div class="match-card reveal" data-match-date="2026-03-08T21:00:00">
+          <div class="match-league">SUPER LEAGUE — DERBY DAY</div>
+          <div class="match-teams">
+            <div class="match-team">
+              <div class="team-logo">🟢</div>
+              <span class="team-name">VIPER SC</span>
+            </div>
+            <div class="match-vs">
+              <span>VS</span>
+              <div class="match-time">21:00</div>
+            </div>
+            <div class="match-team">
+              <div class="team-logo">🟠</div>
+              <span class="team-name">BLAZE CITY</span>
+            </div>
+          </div>
+          <div class="match-countdown">
+            <div class="cd-item"><span class="cd-num" data-cd="days">00</span><span class="cd-label">DAYS</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="hours">00</span><span class="cd-label">HRS</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="minutes">00</span><span class="cd-label">MIN</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span class="cd-num" data-cd="seconds">00</span><span class="cd-label">SEC</span></div>
+          </div>
+          <div class="match-venue">📍 Thunder Dome, Eastside</div>
+          <a href="#" class="match-cta">BUY TICKETS →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE SCORES TICKER ===== -->
+  <section class="section live-ticker" id="scores">
+    <div class="container">
+      <div class="ticker-header reveal">
+        <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+        <h2 class="section-title">LIVE <span class="text-red">SCORES</span></h2>
+      </div>
+    </div>
+    <div class="ticker-track">
+      <div class="ticker-scroll" id="tickerScroll">
+        <div class="ticker-item">
+          <span class="ticker-team">THUNDER FC</span>
+          <span class="ticker-score">3</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-team">STORM UTD</span>
+          <span class="ticker-status live">LIVE 78'</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">IRON WOLVES</span>
+          <span class="ticker-score">2</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">2</span>
+          <span class="ticker-team">GOLDEN HAWKS</span>
+          <span class="ticker-status live">LIVE 65'</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">VIPER SC</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">0</span>
+          <span class="ticker-team">BLAZE CITY</span>
+          <span class="ticker-status">HT</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">PHANTOM XI</span>
+          <span class="ticker-score">0</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">4</span>
+          <span class="ticker-team">APEX ROVERS</span>
+          <span class="ticker-status">FT</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">NOVA ATHLETIC</span>
+          <span class="ticker-score">2</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-team">CRIMSON CITY</span>
+          <span class="ticker-status live">LIVE 88'</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">STEEL UNITED</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">3</span>
+          <span class="ticker-team">SHADOW FC</span>
+          <span class="ticker-status">FT</span>
+        </div>
+        <!-- Duplicated for seamless looping -->
+        <div class="ticker-item">
+          <span class="ticker-team">THUNDER FC</span>
+          <span class="ticker-score">3</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-team">STORM UTD</span>
+          <span class="ticker-status live">LIVE 78'</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">IRON WOLVES</span>
+          <span class="ticker-score">2</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">2</span>
+          <span class="ticker-team">GOLDEN HAWKS</span>
+          <span class="ticker-status live">LIVE 65'</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">VIPER SC</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">0</span>
+          <span class="ticker-team">BLAZE CITY</span>
+          <span class="ticker-status">HT</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">PHANTOM XI</span>
+          <span class="ticker-score">0</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">4</span>
+          <span class="ticker-team">APEX ROVERS</span>
+          <span class="ticker-status">FT</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">NOVA ATHLETIC</span>
+          <span class="ticker-score">2</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-team">CRIMSON CITY</span>
+          <span class="ticker-status live">LIVE 88'</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-team">STEEL UNITED</span>
+          <span class="ticker-score">1</span>
+          <span class="ticker-dash">—</span>
+          <span class="ticker-score">3</span>
+          <span class="ticker-team">SHADOW FC</span>
+          <span class="ticker-status">FT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider-up"></div>
+
+  <!-- ===== FEATURED PLAYERS ===== -->
+  <section class="section players" id="players">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">STARS</span>
+        <h2 class="section-title">FEATURED <span class="text-red">PLAYERS</span></h2>
+        <p class="section-sub">The elite athletes driving every victory.</p>
+      </div>
+      <div class="players-grid">
+        <!-- Player 1 -->
+        <div class="player-card reveal" id="player1">
+          <div class="player-number">#10</div>
+          <div class="player-avatar">
+            <div class="player-silhouette">⚡</div>
+          </div>
+          <h3 class="player-name">MARCUS KANE</h3>
+          <p class="player-position">STRIKER</p>
+          <div class="player-stats">
+            <div class="stat-row">
+              <span class="stat-label">SPEED</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="94"></div></div>
+              <span class="stat-val">94</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">POWER</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="88"></div></div>
+              <span class="stat-val">88</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">ACCURACY</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="91"></div></div>
+              <span class="stat-val">91</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">STAMINA</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="85"></div></div>
+              <span class="stat-val">85</span>
+            </div>
+          </div>
+          <div class="player-season">
+            <div class="ps-item"><span class="ps-num">27</span><span class="ps-label">GOALS</span></div>
+            <div class="ps-item"><span class="ps-num">12</span><span class="ps-label">ASSISTS</span></div>
+            <div class="ps-item"><span class="ps-num">9.1</span><span class="ps-label">RATING</span></div>
+          </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player-card reveal" id="player2">
+          <div class="player-number">#07</div>
+          <div class="player-avatar">
+            <div class="player-silhouette">🔥</div>
+          </div>
+          <h3 class="player-name">ELENA VOSS</h3>
+          <p class="player-position">MIDFIELDER</p>
+          <div class="player-stats">
+            <div class="stat-row">
+              <span class="stat-label">SPEED</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="89"></div></div>
+              <span class="stat-val">89</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">POWER</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="78"></div></div>
+              <span class="stat-val">78</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">ACCURACY</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="96"></div></div>
+              <span class="stat-val">96</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">STAMINA</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="92"></div></div>
+              <span class="stat-val">92</span>
+            </div>
+          </div>
+          <div class="player-season">
+            <div class="ps-item"><span class="ps-num">14</span><span class="ps-label">GOALS</span></div>
+            <div class="ps-item"><span class="ps-num">23</span><span class="ps-label">ASSISTS</span></div>
+            <div class="ps-item"><span class="ps-num">9.4</span><span class="ps-label">RATING</span></div>
+          </div>
+        </div>
+
+        <!-- Player 3 -->
+        <div class="player-card reveal" id="player3">
+          <div class="player-number">#01</div>
+          <div class="player-avatar">
+            <div class="player-silhouette">🛡️</div>
+          </div>
+          <h3 class="player-name">DIEGO RAMOS</h3>
+          <p class="player-position">GOALKEEPER</p>
+          <div class="player-stats">
+            <div class="stat-row">
+              <span class="stat-label">REFLEXES</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="97"></div></div>
+              <span class="stat-val">97</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">POWER</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="82"></div></div>
+              <span class="stat-val">82</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">POSITIONING</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="93"></div></div>
+              <span class="stat-val">93</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">COMMAND</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="90"></div></div>
+              <span class="stat-val">90</span>
+            </div>
+          </div>
+          <div class="player-season">
+            <div class="ps-item"><span class="ps-num">18</span><span class="ps-label">CLEAN SHEETS</span></div>
+            <div class="ps-item"><span class="ps-num">84</span><span class="ps-label">SAVES</span></div>
+            <div class="ps-item"><span class="ps-num">9.2</span><span class="ps-label">RATING</span></div>
+          </div>
+        </div>
+
+        <!-- Player 4 -->
+        <div class="player-card reveal" id="player4">
+          <div class="player-number">#04</div>
+          <div class="player-avatar">
+            <div class="player-silhouette">💪</div>
+          </div>
+          <h3 class="player-name">AIDEN CROSS</h3>
+          <p class="player-position">DEFENDER</p>
+          <div class="player-stats">
+            <div class="stat-row">
+              <span class="stat-label">SPEED</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="80"></div></div>
+              <span class="stat-val">80</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">POWER</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="95"></div></div>
+              <span class="stat-val">95</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">TACKLING</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="93"></div></div>
+              <span class="stat-val">93</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">STAMINA</span>
+              <div class="stat-bar"><div class="stat-fill" data-width="88"></div></div>
+              <span class="stat-val">88</span>
+            </div>
+          </div>
+          <div class="player-season">
+            <div class="ps-item"><span class="ps-num">3</span><span class="ps-label">GOALS</span></div>
+            <div class="ps-item"><span class="ps-num">7</span><span class="ps-label">ASSISTS</span></div>
+            <div class="ps-item"><span class="ps-num">8.9</span><span class="ps-label">RATING</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider-down"></div>
+
+  <!-- ===== NEWS & HIGHLIGHTS ===== -->
+  <section class="section news" id="news">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">LATEST</span>
+        <h2 class="section-title">NEWS & <span class="text-red">HIGHLIGHTS</span></h2>
+      </div>
+      <div class="news-grid">
+        <article class="news-featured reveal" id="newsFeatured">
+          <div class="news-img news-img-1"></div>
+          <div class="news-body">
+            <span class="news-cat">MATCH REPORT</span>
+            <h3 class="news-title">THUNDER FC SHATTER RECORDS WITH STUNNING 5-0 DEMOLITION</h3>
+            <p class="news-excerpt">An unstoppable performance from the Thunder saw them dismantle the league leaders in what pundits are calling the match of the season...</p>
+            <div class="news-meta">
+              <span>FEB 18, 2026</span>
+              <a href="#" class="news-link">READ MORE →</a>
+            </div>
+          </div>
+        </article>
+        <article class="news-card reveal" id="newsCard1">
+          <div class="news-img news-img-2"></div>
+          <div class="news-body">
+            <span class="news-cat">TRANSFER</span>
+            <h3 class="news-title">KANE SIGNS RECORD-BREAKING EXTENSION</h3>
+            <p class="news-excerpt">Star striker Marcus Kane commits his future in a deal worth $120m...</p>
+            <div class="news-meta">
+              <span>FEB 17, 2026</span>
+              <a href="#" class="news-link">READ →</a>
+            </div>
+          </div>
+        </article>
+        <article class="news-card reveal" id="newsCard2">
+          <div class="news-img news-img-3"></div>
+          <div class="news-body">
+            <span class="news-cat">INJURY UPDATE</span>
+            <h3 class="news-title">VOSS RETURNS TO FULL TRAINING</h3>
+            <p class="news-excerpt">Elena Voss has been cleared to return ahead of the crucial quarter-final...</p>
+            <div class="news-meta">
+              <span>FEB 16, 2026</span>
+              <a href="#" class="news-link">READ →</a>
+            </div>
+          </div>
+        </article>
+        <article class="news-card reveal" id="newsCard3">
+          <div class="news-img news-img-4"></div>
+          <div class="news-body">
+            <span class="news-cat">FEATURE</span>
+            <h3 class="news-title">INSIDE THE ARENA: STADIUM UPGRADES</h3>
+            <p class="news-excerpt">A look at the $50m renovation bringing next-gen tech to the stands...</p>
+            <div class="news-meta">
+              <span>FEB 15, 2026</span>
+              <a href="#" class="news-link">READ →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider-up"></div>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">GLORY</span>
+        <h2 class="section-title">TROPHY <span class="text-red">CABINET</span></h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal" id="ach1">
+          <div class="ach-icon">🏆</div>
+          <span class="ach-num counter" data-target="14">0</span>
+          <span class="ach-label">LEAGUE TITLES</span>
+        </div>
+        <div class="achievement-card reveal" id="ach2">
+          <div class="ach-icon">🥇</div>
+          <span class="ach-num counter" data-target="7">0</span>
+          <span class="ach-label">CHAMPIONS CUPS</span>
+        </div>
+        <div class="achievement-card reveal" id="ach3">
+          <div class="ach-icon">⚽</div>
+          <span class="ach-num counter" data-target="1847">0</span>
+          <span class="ach-label">TOTAL GOALS</span>
+        </div>
+        <div class="achievement-card reveal" id="ach4">
+          <div class="ach-icon">🔥</div>
+          <span class="ach-num counter" data-target="342">0</span>
+          <span class="ach-label">WINS THIS DECADE</span>
+        </div>
+        <div class="achievement-card reveal" id="ach5">
+          <div class="ach-icon">📅</div>
+          <span class="ach-num counter" data-target="52">0</span>
+          <span class="ach-label">UNBEATEN STREAK</span>
+        </div>
+        <div class="achievement-card reveal" id="ach6">
+          <div class="ach-icon">🌍</div>
+          <span class="ach-num counter" data-target="96">0</span>
+          <span class="ach-label">COUNTRIES REACHED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPONSORS ===== -->
+  <section class="section sponsors" id="sponsors">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">PARTNERS</span>
+        <h2 class="section-title">OFFICIAL <span class="text-red">SPONSORS</span></h2>
+      </div>
+      <div class="sponsors-grid reveal">
+        <div class="sponsor-item"><span class="sponsor-logo">NIKE</span></div>
+        <div class="sponsor-item"><span class="sponsor-logo">ADIDAS</span></div>
+        <div class="sponsor-item"><span class="sponsor-logo">PUMA</span></div>
+        <div class="sponsor-item"><span class="sponsor-logo">RED BULL</span></div>
+        <div class="sponsor-item"><span class="sponsor-logo">SAMSUNG</span></div>
+        <div class="sponsor-item"><span class="sponsor-logo">VISA</span></div>
+        <div class="sponsor-item"><span class="sponsor-logo">HEINEKEN</span></div>
+        <div class="sponsor-item"><span class="sponsor-logo">EMIRATES</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo"><span class="logo-icon">⚡</span>ARENA</a>
+          <p class="footer-desc">The ultimate sports experience. Every match. Every moment. Every victory.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="social-link" aria-label="YouTube">YT</a>
+            <a href="#" class="social-link" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="#matches">Matches</a></li>
+            <li><a href="#scores">Live Scores</a></li>
+            <li><a href="#players">Players</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>SUPPORT</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>STAY IN THE GAME</h4>
+          <p>Get exclusive updates, match alerts, and insider content.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email address" required id="newsletterEmail">
+            <button type="submit" class="btn btn-primary">JOIN</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 ARENA. All rights reserved. Built for the love of the game.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
